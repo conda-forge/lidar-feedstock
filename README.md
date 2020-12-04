@@ -5,11 +5,13 @@ Home: https://github.com/giswqs/lidar
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lidar-feedstock/blob/master/LICENSE.txt)
 
-Summary: Terrain and hydrological analysis based on LiDAR-derived digital elevation models (DEM)
+Summary: Terrain and hydrological analysis using LiDAR-derived digital elevation models (DEM)
 
+Development: https://github.com/giswqs/lidar
 
+Documentation: https://lidar.readthedocs.io
 
 Current build status
 ====================
