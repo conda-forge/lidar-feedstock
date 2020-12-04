@@ -24,7 +24,7 @@ requirements:
     - click >=6.0
     - matplotlib-base
     - numpy
-    - pysimplegui ==2.30.0
+    - pysimplegui
     - python
     - richdem
     - scikit-image
