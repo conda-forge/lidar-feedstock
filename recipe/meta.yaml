@@ -24,7 +24,7 @@ requirements:
     - click >=6.0
     - matplotlib-base
     - numpy
-    - pysimplegui ==2.30.0
+    - pysimplegui
     - python
     - richdem
     - scikit-image
@@ -44,7 +44,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for delineating nested surface depressions in digital elevation data"
+  summary: "A Python package for delineating nested surface depressions from digital elevation data"
   doc_url: https://lidar.gishub.org
   dev_url: https://github.com/giswqs/lidar
 
