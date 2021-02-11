@@ -1,5 +1,5 @@
 {% set name = "lidar" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 69ac99fd5ba1190df4fdd541dc2608ee958057948fcf3c93121c1a2e1da0f65e
+  sha256: 6b1103554e9e376e3107bdb9d02dacd871ac580da92b67bd186597e5700dc683
 
 build:
   number: 0
@@ -30,6 +30,8 @@ requirements:
     - scikit-image
     - scipy
     - gdal
+    - pyshp
+    - whitebox
 
 test:
   imports:
@@ -42,8 +44,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Terrain and hydrological analysis using LiDAR-derived digital elevation models (DEM)"
-  doc_url: https://lidar.readthedocs.io
+  summary: "A Python package for delineating nested surface depressions from digital elevation data"
+  doc_url: https://lidar.gishub.org
   dev_url: https://github.com/giswqs/lidar
 
 extra:
