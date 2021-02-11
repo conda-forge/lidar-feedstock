@@ -7,11 +7,11 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/lidar-feedstock/blob/master/LICENSE.txt)
 
-Summary: Terrain and hydrological analysis using LiDAR-derived digital elevation models (DEM)
+Summary: A Python package for delineating nested surface depressions in digital elevation data
 
 Development: https://github.com/giswqs/lidar
 
-Documentation: https://lidar.readthedocs.io
+Documentation: https://lidar.gishub.org
 
 Current build status
 ====================
