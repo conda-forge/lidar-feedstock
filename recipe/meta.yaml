@@ -1,20 +1,20 @@
 {% set name = "lidar" %}
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 6b1103554e9e376e3107bdb9d02dacd871ac580da92b67bd186597e5700dc683
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 440d00e5788968473f0fd18a1724ec15a47d2f596385b8e7dd3d67ec99d048bb
 
 build:
   number: 0
   entry_points:
     - lidar=lidar.cli:main
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,11 +40,11 @@ test:
     - lidar --help
 
 about:
-  home: "https://github.com/giswqs/lidar"
+  home: https://github.com/giswqs/lidar
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A Python package for delineating nested surface depressions from digital elevation data"
+  summary: A Python package for delineating nested surface depressions from digital elevation data
   doc_url: https://lidar.gishub.org
   dev_url: https://github.com/giswqs/lidar
 
