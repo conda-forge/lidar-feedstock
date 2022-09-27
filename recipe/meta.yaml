@@ -1,5 +1,5 @@
 {% set name = "lidar" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d408e4aa6e0cd09b13813523b9ad69835ed5d61bd5f1ff27aeac1e108d34d67f
+  sha256: ce0c7df266d60a37589348ab0f6b742da599b8c329fc3f26ea23d38425ca7188
 
 build:
   number: 0
@@ -22,14 +22,17 @@ requirements:
     - python >=3.7
   run:
     - click >=6.0
+    - gdal
+    - gdown
+    - geopandas
     - matplotlib-base
     - numpy
     - pysimplegui
     - python >=3.7
+    - rasterio
     - richdem
     - scikit-image
     - scipy
-    - gdal
     - pyshp
     - whitebox
 
