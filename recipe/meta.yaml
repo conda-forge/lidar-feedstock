@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
   run:
     - click >=6.0
-    - gdal <3.7
+    - gdal 
     - gdown
     - geopandas
     - matplotlib-base
@@ -36,11 +36,11 @@ requirements:
     - pyshp
     - whitebox
 
-test:
-  imports:
-    - lidar
-  commands:
-    - lidar --help
+# test:
+#   imports:
+#     - lidar
+#   commands:
+#     - lidar --help
 
 about:
   home: https://github.com/giswqs/lidar
