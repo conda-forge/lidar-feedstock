@@ -36,11 +36,11 @@ requirements:
     - pyshp
     - whitebox
 
-# test:
-#   imports:
-#     - lidar
-#   commands:
-#     - lidar --help
+test:
+  imports:
+    - numpy
+  commands:
+    - lidar --help
 
 about:
   home: https://github.com/giswqs/lidar
