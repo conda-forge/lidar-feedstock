@@ -1,5 +1,5 @@
 {% set name = "lidar" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ce0c7df266d60a37589348ab0f6b742da599b8c329fc3f26ea23d38425ca7188
+  sha256: 203147542cb7abd3ad78ed30cea17a705dd7ecf0f97ea04007de399ffbd8411a
 
 build:
   number: 0
