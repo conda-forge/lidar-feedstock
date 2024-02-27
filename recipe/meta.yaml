@@ -1,5 +1,5 @@
 {% set name = "lidar" %}
-{% set version = "0.7.3" %}
+{% set version = "0.7.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: db4c052a0fcdde837b81313fb95f7c829c28361879deaf9a8aced468be89846b
+  sha256: 678cd08a584dbeb565b000a7ae1422fb8cdcc0244e3002f1681de812ac900ef2
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - geopandas
     - matplotlib-base
     - numpy
-    - pysimplegui
+    # - pysimplegui
     - python >=3.8
     - rasterio
     - richdem
