@@ -1,5 +1,5 @@
 {% set name = "lidar" %}
-{% set version = "0.7.4" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 678cd08a584dbeb565b000a7ae1422fb8cdcc0244e3002f1681de812ac900ef2
+  sha256: 5dfdf6428f85138868d5a04f69b07990a1ba136ca9f5d458147a7a8eaace92b9
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
   run:
     - click >=6.0
-    - gdal 
+    - gdal
     - gdown
     - geopandas
     - matplotlib-base
