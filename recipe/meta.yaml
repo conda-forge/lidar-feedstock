@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 668b36f0f5e0f6c029a4bc7e9038832a14cdfe8c79dd3a4cd074b9c368a639fd
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - lidar=lidar.cli:main
   noarch: python
@@ -19,7 +19,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
     - click >=6.0
     - gdal
@@ -28,7 +28,7 @@ requirements:
     - matplotlib-base
     - numpy
     # - pysimplegui
-    - python >=3.8
+    - python >={{ python_min }}
     - rasterio
     - richdem
     - scikit-image
@@ -37,6 +37,8 @@ requirements:
     - whitebox
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - numpy
   # commands:
